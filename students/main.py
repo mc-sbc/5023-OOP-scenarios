@@ -19,6 +19,7 @@ students.append(student03)
 
 # Print the names and marks for each of the students
 print('\nStudents:\n')
+
 # Loop through student objects' attributes
 for student in students:
     print('---')
