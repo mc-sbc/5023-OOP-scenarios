@@ -1,8 +1,5 @@
-''' 
-    Program used to print out co-ordinates for different shapes.
-    This one is set to draw a hexagon
-'''
-
+# Program used to print out co-ordinates for different polygons.
+  
 import turtle
 
 sides = int(input('Sides: '))
