@@ -14,10 +14,10 @@ def create_rectangle():
     # Creates object as an instance of class Rectangle
     rectangle = shapes.Rectangle(length, width)
  
-    # Calculates the area for the rectangle and prints this rounded to 2 decimal places
+    # Calls the calculate_area function and prints its return value
     print(f'Rectangle area: { rectangle.calculate_area() }')
 
-    # Calculates the perimeter for the rectangle and prints this rounded to 2 decimal places    
+    # Calls the calculate_perimeter function and prints its return value  
     print(f'Rectangle perimeter: { rectangle.calculate_perimeter() }')
  
 
@@ -34,10 +34,10 @@ def create_circle():
     # Creates object as an instance of class Circle
     circle = shapes.Circle(radius)
 
-    # Calls the calculate_area function and prints this rounded to 2 decimal places
+    # Calls the calculate_area function and prints its return value
     print(f"Circle area: { circle.calculate_area() }")
 
-    # Calls the calculate_ccircumference function and prints this rounded to 2 decimal places
+    # Calls the calculate_ccircumference function and prints its return value
     print(f"Circle circumference: { circle.calculate_circumference() }")
 
 def show_menu():
