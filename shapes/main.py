@@ -1,5 +1,4 @@
 import shapes
-import math
 
 def create_rectangle():
     ''' 
@@ -12,14 +11,14 @@ def create_rectangle():
     length = float(input('Rectangle length: '))
     width = float(input('Rectangle width: '))
 
-    #Creates object as an instance of class Rectangle
-    shapes.Rectangle(length, width)
+    # Creates object as an instance of class Rectangle
+    rectangle = shapes.Rectangle(length, width)
  
     # Calculates the area for the rectangle and prints this rounded to 2 decimal places
-    print(f'Rectangle area: { shapes.calculate_area() }')
+    print(f'Rectangle area: { rectangle.calculate_area() }')
 
     # Calculates the perimeter for the rectangle and prints this rounded to 2 decimal places    
-    print(f'Rectangle perimeter: { shapes.calculate.perimeter() }')
+    print(f'Rectangle perimeter: { rectangle.calculate_perimeter() }')
  
 
 def create_circle():
@@ -32,21 +31,14 @@ def create_circle():
     print()
     radius = float(input('Circle radius: '))
 
-    # Creates a dictionary for the circle
-    # TODO: Should be replaced with the creation of a Circle object
-    circle = {}
-    circle['radius'] = radius
+    # Creates object as an instance of class Circle
+    circle = shapes.Circle(radius)
 
-    # Calculates the area for the circle and prints this rounded to 2 decimal places
-    # TODO: Replace the next line with a call to the Circle's calculate_area() method
-    area = (circle['radius'] * circle['radius']) * math.pi 
-    print(f'Circle area: {round(area,2)}')
+    # Calls the calculate_area function and prints this rounded to 2 decimal places
+    print(f"Circle area: { circle.calculate_area() }")
 
-    # Calclates the circumference for the circle and prints this rounded to 2 decimal places
-    # TODO: Replace the next line with a call to the Circle's calculate_circumference() method
-    circumference = 2 * circle['radius'] * math.pi
-    print(f'Circle circumference: {round(circumference, 2)}')
-    print()
+    # Calls the calculate_ccircumference function and prints this rounded to 2 decimal places
+    print(f"Circle circumference: { circle.calculate_circumference() }")
 
 def show_menu():
     ''' Utility function to show the menu options '''
