@@ -8,7 +8,7 @@ class Student:
         self.mathematics_mark = mathematics_mark
         self.completed_assessments = completed_assessments
 
-    # Calculates average of the three student marks and rounds to the nearest whole number 
+    # Function that calculates average of the three student marks and rounds to the nearest whole number 
     def ave_marks(self):
         ave = (self.english_mark + self.science_mark + self.mathematics_mark) / 3
         return round(ave)
