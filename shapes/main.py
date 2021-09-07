@@ -12,22 +12,15 @@ def create_rectangle():
     length = float(input('Rectangle length: '))
     width = float(input('Rectangle width: '))
 
-    # Creates a dictionary for the rectangle
-    # TODO: Should be replaced with the creation of a Rectangle object
-    rectangle = {}
-    rectangle['length'] = length
-    rectangle['width'] = width
-
+    #Creates object as an instance of class Rectangle
+    shapes.Rectangle(length, width)
+ 
     # Calculates the area for the rectangle and prints this rounded to 2 decimal places
-    # TODO: Replace the next line with a call to the Rectangle's calculate_area() method
-    area = rectangle['length'] * rectangle['width']
-    print(f'Rectangle area: {round(area, 2)}')
+    print(f'Rectangle area: { shapes.calculate_area() }')
 
-    # Calculates the perimeter for the rectangle and prints this rounded to 2 decimal places
-    # TODO: Replace the next line with a call to the Rectangle's calculate_perimeter() method
-    perimeter = 2 * rectangle['length'] + 2 * rectangle['width']
-    print(f'Rectangle perimeter: {round(perimeter, 2)}')
-    print()
+    # Calculates the perimeter for the rectangle and prints this rounded to 2 decimal places    
+    print(f'Rectangle perimeter: { shapes.calculate.perimeter() }')
+ 
 
 def create_circle():
     ''' 
